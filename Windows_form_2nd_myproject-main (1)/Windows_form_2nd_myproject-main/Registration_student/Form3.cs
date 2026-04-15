@@ -13,14 +13,12 @@ namespace Student_Registration_form
 {
     public partial class Form3 : Form
     {
-       StudentData student;
-List<StudentData> users;
-string path = "students.json";
+       
 
-   public Form3(StudentData data)
+   public Form3()
    {
         InitializeComponent();
-      student = data;
+      
    }
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -38,19 +36,7 @@ string path = "students.json";
             comboBox2.Items.Add("4th Year");
 
             // Load student data 
-            textBox1.Text = student.Name1;
-            textBox2.Text = student.Name2;
-            textBox3.Text = student.Name3;
-
-            dateTimePicker1.Text = student.Birthdate;
-
-            numericUpDown1.Value = int.Parse(student.Age);
-
-            comboBox1.Text = student.Gender;
-            textBox4.Text = student.Address;
-            textBox5.Text = student.Course;
-
-            comboBox2.Text = student.Year;
+    
         }
 
         private void button1_Click(object sender, EventArgs e)
