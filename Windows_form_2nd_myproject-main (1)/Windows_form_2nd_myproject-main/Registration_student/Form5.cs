@@ -62,7 +62,7 @@ namespace Student_Registration_form
         {
             panel1.Controls.Clear();
             
-            Form3 f3 = new Form3(student); // <---- this is edit
+            Form3 f3 = new Form3(); // <---- this is edit
             
             f3.TopLevel = false;
             f3.FormBorderStyle = FormBorderStyle.None;
