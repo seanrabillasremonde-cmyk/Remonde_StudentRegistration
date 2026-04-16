@@ -110,7 +110,7 @@ namespace Student_Registration_form
                 };
 
             users.Add(Newuser);
-               json = JsonSerializer.Serialize(users, new JsonSerializerOptions
+               json = JsonSerializer.Serialize(users, new JsonSerializerOptions     //  //JsonSerializerOptions is a class within the System.Text.Json its a namespace that all obejct will become a json string in serialization and in deserialization  it converts the string into a object  
             {
 
                 WriteIndented = true
